@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/header.css";
 import Logo from "../images/logo/agencia-eplus-n-logo.png";
+import CardItems from "./CardItems";
 
 export default function Header() {
   return (
