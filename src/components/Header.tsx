@@ -4,7 +4,7 @@ import Logo from "../images/logo/agencia-eplus-n-logo.png";
 import CardItems from "./CardItems";
 
 export default function Header() {
-  const [isCardVisible, setIsCardVisible] = useState(false);
+  const [isCardVisible, setIsCardVisible] = useState<boolean>(false);
   return (
     <div className="header-container">
       <div className="logo-image">
@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       <div className="actions">
         <span className="material-icons">search</span>
-        <span className="material-icons">account_circle</span>
+        <span className="material-icons">person</span>
         <span
           className="material-icons"
           onClick={() => setIsCardVisible(!isCardVisible)}
