@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/header.css";
 import Logo from "../images/logo/agencia-eplus-n-logo.png";
 import CardItems from "./CardItems";
 
 export default function Header() {
+  const [isCardVisible, setIsCardVisible] = useState(false);
   return (
     <div className="header-container">
       <div className="logo-image">
@@ -19,7 +20,13 @@ export default function Header() {
       <div className="actions">
         <span className="material-icons">search</span>
         <span className="material-icons">account_circle</span>
-        <span className="material-icons">shopping_cart</span>
+        <span
+          className="material-icons"
+          onClick={() => setIsCardVisible(!isCardVisible)}
+        >
+          shopping_cart
+        </span>
+        {isCardVisible && <CardItems />}
       </div>
     </div>
   );

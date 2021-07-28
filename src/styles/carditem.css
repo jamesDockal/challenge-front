@@ -1,6 +1,7 @@
 .shopping-items {
   position: absolute;
-  right: 15%;
+  top: 170%;
+  /* right: 15%; */
   max-width: 250px;
   background-color: #e6e6e6;
 }
