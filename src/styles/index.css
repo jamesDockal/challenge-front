@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font: 16px 'Montserrat' ;
-  font-weight: 300;
+  font: 16px "Montserrat";
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

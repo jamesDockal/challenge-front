@@ -1,13 +1,14 @@
 import React from "react";
-import Logo from "../images/agencia-eplus-n-logo.png";
+import "../styles/header.css";
+import Logo from "../images/logo/agencia-eplus-n-logo.png";
 
 export default function Header() {
   return (
-    <div>
+    <div className="header-container">
       <div className="logo-image">
         <img src={Logo} alt="logo" />
       </div>
-      <div>
+      <div className="most-searched">
         <span>Lorem ipsum</span>
         <span>Lorem ipsum</span>
         <span>Lorem ipsum</span>
