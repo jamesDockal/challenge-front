@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { cart } from "../products.json";
 import "../styles/carditem.css";
 
@@ -21,6 +21,7 @@ export default function CardItems() {
 
   return (
     <div className="shopping-items">
+      <div className="triangulo" />
       <div className="cards-container">
         {cart.item.map((item) => {
           return (
